@@ -123,13 +123,13 @@ namespace GestionDeContactos
                 } 
                 
                 
-                Contact newContact = new Contact
-                {
+                    Contact newContact = new Contact
+                    {
                     Id = Convert.ToInt32(inputId),
                     Name = inputName,
                     Phone = inputPhone,
                     Email = inputEmail
-                };
+                    };
                 contacts.Add(newContact);
                 Console.WriteLine("-----------------------------------------------\n");
                 Console.WriteLine("         Contacto creado exitosamente.         \n");
@@ -197,7 +197,7 @@ namespace GestionDeContactos
             Console.WriteLine("Por favor ingrese el nombre del contacto que desea buscar:");
 
             string searchByName = Console.ReadLine();
-            
+
             foreach (var contact in contacts)
             {
                 if (contact.Name.Contains(searchByName, StringComparison.OrdinalIgnoreCase))
